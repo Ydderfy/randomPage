@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RandomPage - Contact</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-random"></i> RandomPage
+            </a>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Accueil</a></li>
+                <li><a href="forum.html" class="nav-link">Forum</a></li>
+                <li><a href="contact.html" class="nav-link active">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <h1><i class="fas fa-envelope"></i> Contactez-nous</h1>
+        <p>Nous sommes là pour répondre à toutes vos questions</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <h2>Restons en Contact</h2>
+                    <p>N'hésitez pas à nous contacter pour toute question, suggestion ou collaboration. Notre équipe vous répondra dans les plus brefs délais.</p>
+                    
+                    <div class="info-cards">
+                        <div class="info-card">
+                            <div class="info-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="info-content">
+                                <h4>Adresse</h4>
+                                <p>123 Rue de la Créativité<br>75001 Paris, France</p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-card">
+                            <div class="info-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="info-content">
+                                <h4>Email</h4>
+                                <p>contact@randompage.fr<br>support@randompage.fr</p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-card">
+                            <div class="info-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="info-content">
+                                <h4>Téléphone</h4>
+                                <p>+33 1 23 45 67 89<br>Lun - Ven: 9h - 18h</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-section">
+                        <h4>Suivez-nous</h4>
+                        <div class="social-links-large">
+                            <a href="#" class="social-btn facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-btn twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-btn instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-btn linkedin"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" class="social-btn github"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contactForm">
+                        <h2>Envoyez-nous un Message</h2>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">Prénom</label>
+                                <input type="text" id="firstName" name="firstName" required placeholder="Votre prénom">
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Nom</label>
+                                <input type="text" id="lastName" name="lastName" required placeholder="Votre nom">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required placeholder="votre@email.com">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Sujet</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Sélectionnez un sujet</option>
+                                <option value="general">Question générale</option>
+                                <option value="support">Support technique</option>
+                                <option value="partnership">Partenariat</option>
+                                <option value="feedback">Feedback</option>
+                                <option value="other">Autre</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="6" required placeholder="Écrivez votre message ici..."></textarea>
+                        </div>
+                        
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="newsletter" name="newsletter">
+                            <label for="newsletter">Je souhaite recevoir la newsletter</label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <i class="fas fa-paper-plane"></i> Envoyer le Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="map-placeholder">
+            <div class="map-overlay">
+                <i class="fas fa-map-marked-alt"></i>
+                <p>Carte interactive - 123 Rue de la Créativité, Paris</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title">Questions Fréquentes</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Comment puis-je créer un compte ?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Pour créer un compte, cliquez sur le bouton "Rejoindre le Forum" sur notre page d'accueil. Remplissez le formulaire d'inscription avec vos informations et validez votre email.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Le forum est-il gratuit ?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Oui, l'accès au forum est entièrement gratuit ! Vous pouvez participer aux discussions, poser des questions et partager vos connaissances sans aucun frais.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Comment contacter le support ?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Vous pouvez nous contacter via le formulaire ci-dessus, par email à support@randompage.fr, ou par téléphone au +33 1 23 45 67 89 du lundi au vendredi.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Puis-je proposer un partenariat ?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Absolument ! Nous sommes ouverts aux collaborations. Sélectionnez "Partenariat" dans le formulaire de contact et décrivez votre projet. Nous reviendrons vers vous rapidement.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h4><i class="fas fa-random"></i> RandomPage</h4>
+                    <p>Votre destination pour l'échange d'idées et la créativité collaborative.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Liens Rapides</h4>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="forum.html">Forum</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Suivez-nous</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 RandomPage. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

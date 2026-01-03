@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RandomPage - Forum</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-random"></i> RandomPage
+            </a>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Accueil</a></li>
+                <li><a href="forum.html" class="nav-link active">Forum</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <h1><i class="fas fa-comments"></i> Forum de Discussion</h1>
+        <p>Partagez vos idées, posez vos questions et échangez avec la communauté</p>
+    </section>
+
+    <!-- Forum Section -->
+    <section class="forum-section">
+        <div class="container">
+            <!-- Forum Search & Actions -->
+            <div class="forum-actions">
+                <div class="search-box">
+                    <input type="text" placeholder="Rechercher dans le forum..." id="forumSearch">
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+                <button class="btn btn-primary" id="newTopicBtn">
+                    <i class="fas fa-plus"></i> Nouveau Sujet
+                </button>
+            </div>
+
+            <!-- Forum Categories -->
+            <div class="forum-categories">
+                <button class="category-btn active" data-category="all">Tous</button>
+                <button class="category-btn" data-category="general">Général</button>
+                <button class="category-btn" data-category="tech">Technologie</button>
+                <button class="category-btn" data-category="design">Design</button>
+                <button class="category-btn" data-category="help">Aide</button>
+            </div>
+
+            <!-- Forum Topics -->
+            <div class="forum-topics">
+                <div class="topic-card" data-category="general">
+                    <div class="topic-avatar">
+                        <img src="https://i.pravatar.cc/50?img=1" alt="Avatar">
+                    </div>
+                    <div class="topic-content">
+                        <h3 class="topic-title">Bienvenue aux nouveaux membres !</h3>
+                        <p class="topic-preview">Présentez-vous ici et dites-nous ce qui vous amène sur RandomPage...</p>
+                        <div class="topic-meta">
+                            <span><i class="fas fa-user"></i> Marie D.</span>
+                            <span><i class="fas fa-clock"></i> Il y a 2 heures</span>
+                            <span><i class="fas fa-comments"></i> 24 réponses</span>
+                            <span class="topic-tag tag-general">Général</span>
+                        </div>
+                    </div>
+                    <div class="topic-stats">
+                        <span class="views"><i class="fas fa-eye"></i> 156</span>
+                        <span class="likes"><i class="fas fa-heart"></i> 42</span>
+                    </div>
+                </div>
+
+                <div class="topic-card" data-category="tech">
+                    <div class="topic-avatar">
+                        <img src="https://i.pravatar.cc/50?img=2" alt="Avatar">
+                    </div>
+                    <div class="topic-content">
+                        <h3 class="topic-title">Les meilleures pratiques CSS en 2026</h3>
+                        <p class="topic-preview">Quelles sont vos techniques préférées pour organiser votre CSS ? Discutons des frameworks...</p>
+                        <div class="topic-meta">
+                            <span><i class="fas fa-user"></i> Thomas L.</span>
+                            <span><i class="fas fa-clock"></i> Il y a 5 heures</span>
+                            <span><i class="fas fa-comments"></i> 18 réponses</span>
+                            <span class="topic-tag tag-tech">Technologie</span>
+                        </div>
+                    </div>
+                    <div class="topic-stats">
+                        <span class="views"><i class="fas fa-eye"></i> 89</span>
+                        <span class="likes"><i class="fas fa-heart"></i> 31</span>
+                    </div>
+                </div>
+
+                <div class="topic-card" data-category="design">
+                    <div class="topic-avatar">
+                        <img src="https://i.pravatar.cc/50?img=3" alt="Avatar">
+                    </div>
+                    <div class="topic-content">
+                        <h3 class="topic-title">Tendances UI/UX pour cette année</h3>
+                        <p class="topic-preview">J'ai remarqué que le design minimaliste revient en force. Qu'en pensez-vous ?</p>
+                        <div class="topic-meta">
+                            <span><i class="fas fa-user"></i> Sophie M.</span>
+                            <span><i class="fas fa-clock"></i> Il y a 1 jour</span>
+                            <span><i class="fas fa-comments"></i> 45 réponses</span>
+                            <span class="topic-tag tag-design">Design</span>
+                        </div>
+                    </div>
+                    <div class="topic-stats">
+                        <span class="views"><i class="fas fa-eye"></i> 234</span>
+                        <span class="likes"><i class="fas fa-heart"></i> 67</span>
+                    </div>
+                </div>
+
+                <div class="topic-card" data-category="help">
+                    <div class="topic-avatar">
+                        <img src="https://i.pravatar.cc/50?img=4" alt="Avatar">
+                    </div>
+                    <div class="topic-content">
+                        <h3 class="topic-title">Besoin d'aide avec JavaScript async/await</h3>
+                        <p class="topic-preview">Je n'arrive pas à comprendre comment gérer les promesses. Quelqu'un peut m'expliquer ?</p>
+                        <div class="topic-meta">
+                            <span><i class="fas fa-user"></i> Lucas B.</span>
+                            <span><i class="fas fa-clock"></i> Il y a 2 jours</span>
+                            <span><i class="fas fa-comments"></i> 12 réponses</span>
+                            <span class="topic-tag tag-help">Aide</span>
+                        </div>
+                    </div>
+                    <div class="topic-stats">
+                        <span class="views"><i class="fas fa-eye"></i> 78</span>
+                        <span class="likes"><i class="fas fa-heart"></i> 15</span>
+                    </div>
+                </div>
+
+                <div class="topic-card" data-category="tech">
+                    <div class="topic-avatar">
+                        <img src="https://i.pravatar.cc/50?img=5" alt="Avatar">
+                    </div>
+                    <div class="topic-content">
+                        <h3 class="topic-title">React vs Vue vs Angular en 2026</h3>
+                        <p class="topic-preview">Le débat éternel ! Quel framework JavaScript préférez-vous et pourquoi ?</p>
+                        <div class="topic-meta">
+                            <span><i class="fas fa-user"></i> Emma R.</span>
+                            <span><i class="fas fa-clock"></i> Il y a 3 jours</span>
+                            <span><i class="fas fa-comments"></i> 89 réponses</span>
+                            <span class="topic-tag tag-tech">Technologie</span>
+                        </div>
+                    </div>
+                    <div class="topic-stats">
+                        <span class="views"><i class="fas fa-eye"></i> 412</span>
+                        <span class="likes"><i class="fas fa-heart"></i> 98</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pagination -->
+            <div class="pagination">
+                <button class="page-btn active">1</button>
+                <button class="page-btn">2</button>
+                <button class="page-btn">3</button>
+                <button class="page-btn">...</button>
+                <button class="page-btn">10</button>
+                <button class="page-btn"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- New Topic Modal -->
+    <div class="modal" id="newTopicModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Créer un nouveau sujet</h2>
+                <button class="close-modal">&times;</button>
+            </div>
+            <form id="newTopicForm">
+                <div class="form-group">
+                    <label for="topicTitle">Titre du sujet</label>
+                    <input type="text" id="topicTitle" required placeholder="Entrez le titre...">
+                </div>
+                <div class="form-group">
+                    <label for="topicCategory">Catégorie</label>
+                    <select id="topicCategory" required>
+                        <option value="">Sélectionnez une catégorie</option>
+                        <option value="general">Général</option>
+                        <option value="tech">Technologie</option>
+                        <option value="design">Design</option>
+                        <option value="help">Aide</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="topicContent">Contenu</label>
+                    <textarea id="topicContent" rows="6" required placeholder="Écrivez votre message..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Publier</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h4><i class="fas fa-random"></i> RandomPage</h4>
+                    <p>Votre destination pour l'échange d'idées et la créativité collaborative.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Liens Rapides</h4>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="forum.html">Forum</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Suivez-nous</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 RandomPage. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
